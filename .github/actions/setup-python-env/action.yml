@@ -3,7 +3,7 @@ description: "Set up Python environment for the given Python version"
 
 inputs:
   python-version:
-    description: 'Python version for setup-python'
+    description: "Python version for setup-python"
     required: true
     default: "3.12"
 
