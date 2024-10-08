@@ -1,0 +1,52 @@
+site_name: cookiecutter-uv-example
+repo_url: https://github.com/fpgmaas/cookiecutter-uv-example
+site_url: https://fpgmaas.github.io/cookiecutter-uv-example
+site_description: This is a template repository for Python projects that use uv for their dependency management.
+site_author: Florian Maas
+edit_uri: edit/main/docs/
+repo_name: fpgmaas/cookiecutter-uv-example
+copyright: Maintained by <a href="https://fpgmaas.com">Florian</a>.
+
+nav:
+  - Home: index.md
+  - Modules: modules.md
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [cookiecutter_uv_example]
+theme:
+  name: material
+  feature:
+    tabs: true
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/fpgmaas/cookiecutter-uv-example
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/cookiecutter-uv-example
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
